@@ -109,7 +109,7 @@ def main(argv):
 	text = '#ifndef {0}\n#define {0}\n'.format(hname_upper)
 	if store_vector:
 		text += '\n#ifdef __cplusplus\n#include <vector>\n#endif\n'
-        text += '\n#define NUM_ELEMENTS {}\n'.len(data)
+        text += '\n#define CLUSTER_CODE_WORDS {}\n'.len(data)
 	text += '\nstatic const unsigned char {}[] = {{\n'.format(hname)
 
 	current = 0

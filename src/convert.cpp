@@ -86,7 +86,7 @@ int convert(const string fin, const string fout, string hname, const bool store_
 
 		ofs.open(fout.c_str(), ofstream::binary); // currently only support LF line endings output
 		ofs << "#ifndef " << name_upper_h.c_str() << "\n#define " << name_upper_h.c_str() << "\n";
-    ofs << "#define NUM_ELEMENTS " << to_string(data_length) << "\n";
+    ofs << "#define CLUSTER_CODE_WORDS " << to_string(data_length) << "\n";
 		if (store_vector) {
 			ofs << "\n#ifdef __cplusplus\n#include <vector>\n#endif\n";
 		}
